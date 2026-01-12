@@ -25,7 +25,7 @@ jobs:
       
     defaults:
       run:
-        working-directory: ./aviatrix_transits_and_spokes_aws
+        working-directory: ./aviatrix_transit_spoke_gws
         
     steps:
     - name: Checkout
@@ -39,7 +39,7 @@ jobs:
         policy_type: 'aws'
         only_warn: false # Set to false to block deployment if violations are found
         sarif_upload: true
-        iac_dir: ./aviatrix_transits_and_spokes_aws
+        iac_dir: ./aviatrix_transit_spoke_gws
 
      # Authenticate to AWS using OIDC
     - name: 'Authenticate to AWS'
