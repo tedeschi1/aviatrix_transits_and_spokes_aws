@@ -15,7 +15,7 @@ provider "aviatrix" {
   # Configuration options
   controller_ip = "100.29.2.46"
   username = "admin"
-  password = ${{ secrets.AVIATRIX_CONTROLLER_PASSWORD }}
+  password = var.aviatrix_controller_password
   skip_version_validation = false
   verify_ssl_certificate = false
 }
