@@ -3,7 +3,7 @@ module "aws_spoke_vpc1_us-east-1" {
   version = "8.2.0"
 
   cloud           = "AWS"
-  name            = "spoke_vpc1_us-east-1"
+  name            = "spoke-vpc1-us-east-1"
   cidr            = "10.1.0.0/20"
   region          = "us-east-1"
   account         = "aws_admin"
