@@ -13,7 +13,7 @@ terraform {
 
 provider "aviatrix" {
   # Configuration options
-  controller_ip = "100.29.2.46"
+  controller_ip = var.aviatrix_controller_ip
   username = "admin"
   password = var.aviatrix_controller_password
   skip_version_validation = true
