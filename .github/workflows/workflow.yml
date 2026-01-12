@@ -24,6 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
         TF_VAR_aviatrix_controller_password: ${{ secrets.AVIATRIX_CONTROLLER_PASSWORD }}
+        TF_VAR_aviatrix_controller_ip: ${{ vars.AVIATRIX_CONTROLLER_IP }}
       
     defaults:
       run:
