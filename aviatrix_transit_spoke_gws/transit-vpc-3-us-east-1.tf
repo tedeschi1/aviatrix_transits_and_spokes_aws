@@ -5,5 +5,5 @@ module "aws_transit_vpc3_us-east-1" {
   region          = "us-east-1"
   name            = "transit-vpc3-us-east-1"
   account         = "aws_admin"
-  cidr            = "10.1.255.0/27"
+  cidr            = "10.1.255.0/24"
 }
